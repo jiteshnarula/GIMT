@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:icon="@drawable/aboutus"
+        android:id="@+id/home"></item>
+
+    <item
+        android:title="Courses"
+        android:icon="@drawable/courses"
+        android:id="@+id/courses"></item>
+
+    <item
+        android:title="Result"
+        android:icon="@drawable/result_final"
+        android:id="@+id/result"></item>
+
+    <item
+        android:title="Syllabus"
+        android:icon="@drawable/syllabus_final"
+        android:id="@+id/syllabus"></item>
+
+    <item
+        android:title="More"
+        android:id="@+id/location"
+        android:icon="@drawable/more"></item>
+</menu>

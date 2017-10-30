@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiteshnarula.gimt.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/stackRelLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_grey_line_bottom_border">
+
+
+                    <TextView
+                        android:id="@+id/coursesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="bottom|left"
+                        android:text="Syllabus"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large"
+                        android:textColor="#de2c2424"
+                        android:textSize="30sp"
+                        android:textStyle="normal|bold"
+                        android:theme="@style/Base.V11.Theme.AppCompat.Light.Dialog" />
+
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/midRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/botRelLay"
+            android:layout_below="@id/topRelLay"
+            android:layout_marginTop="5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/courseRelLay"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/botRelLay"
+                android:layout_below="@id/topRelLay"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+
+                <ScrollView
+                    android:id="@+id/midScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/componentsRelLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/titleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="Select Subject"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioButtonGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/titleTextView">
+
+
+                            <RadioButton
+                                android:id="@+id/mathsRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:checked="false"
+                                android:gravity="center"
+                                android:onClick="radioButtonClicked" />
+
+                            <RadioButton
+                                android:id="@+id/phyRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mathsRadioButton"
+                                android:layout_marginTop="30dp"
+                                android:checked="false"
+                                android:gravity="center"
+                                android:onClick="radioButtonClicked" />
+
+                            <RadioButton
+                                android:id="@+id/btRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/phyRadioButton"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:checked="false"
+                                android:gravity="center"
+                                android:onClick="radioButtonClicked" />
+
+                            <RadioButton
+                                android:id="@+id/eeeRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btRadioButton"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:checked="false"
+                                android:gravity="center"
+                                android:onClick="radioButtonClicked" />
+
+
+
+                            <TextView
+                                android:id="@+id/titleTextView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Departmental Elective I"
+                                android:textAlignment="center"
+                                android:textSize="25sp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/button1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30dp"
+                                    android:checked="false"
+                                    android:gravity="center"
+                                    android:onClick="radioButtonClicked" />
+
+                                <RadioButton
+                                    android:id="@+id/button2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/button1"
+                                    android:layout_marginTop="30dp"
+                                    android:checked="false"
+                                    android:gravity="center"
+                                    android:onClick="radioButtonClicked" />
+
+                                <RadioButton
+                                    android:id="@+id/button3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/button2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30dp"
+                                    android:checked="false"
+                                    android:gravity="center"
+                                    android:onClick="radioButtonClicked" />
+
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/botRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_line_top_border"
+                app:menu="@menu/bottom_navigation_view"></android.support.design.widget.BottomNavigationView>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

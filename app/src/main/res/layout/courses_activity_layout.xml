@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiteshnarula.gimt.MainActivity"
+    android:background="@drawable/backgroundimage"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/stackRelLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/topRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/tabBackground"
+            >
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/topAppBar"
+                android:background="@color/tabBackground"
+                 >
+
+
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/topToolbar"
+                    android:background="@drawable/white_grey_line_bottom_border"
+                    android:backgroundTint="@color/tabBackground"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/coursesLinearLayout"
+                        android:orientation="horizontal"
+                        android:background="@color/tabBackground"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/coursesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|left"
+                            android:text="Courses"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large"
+                            android:textColor="#de2c2424"
+                            android:textSize="30sp"
+                            android:textStyle="normal|bold"
+                            android:theme="@style/Base.V11.Theme.AppCompat.Light.Dialog" />
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/botRelLay"
+            android:layout_below="@id/topRelLay"
+            android:id="@+id/midRelLay"
+
+            >
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/container">
+            </android.support.v4.view.ViewPager>
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabs"
+                app:tabMode="scrollable"
+                android:background="@color/tabBackground"
+                ></android.support.design.widget.TabLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/botRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavView"
+                android:background="@drawable/white_grey_line_top_border"
+                app:menu="@menu/bottom_navigation_view"
+                >
+            </android.support.design.widget.BottomNavigationView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

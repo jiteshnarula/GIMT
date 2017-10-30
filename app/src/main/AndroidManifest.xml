@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiteshnarula.gimt">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CoursesActivity"></activity>
+        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".SyllabusActivity"></activity>
+
+
+         <activity android:name=".bbaSyllabusBranches"></activity>
+        <activity android:name=".BtechSyllabusBranches"></activity>
+        <activity android:name=".mcaSyllabusBranches"></activity>
+        <activity android:name=".mbaSyllabusBranches"></activity>
+        <activity android:name=".mtechSyllabusBranches"></activity>
+
+        <activity android:name=".CSESyllabusBranches"></activity>
+        <activity android:name=".MESyllabusBranches"></activity>
+        <activity android:name=".ECESyllabusBranches"></activity>
+        <activity android:name=".EESyllabusBranches"></activity>
+        <activity android:name=".CESyllabusBranches"></activity>
+
+        <activity android:name=".SessionSyllabus1"></activity>
+        <activity android:name=".SessionSyllabus2"></activity>
+        <activity android:name=".SessionSyllabus3"></activity>
+        <activity android:name=".SessionSyllabus4"></activity>
+        <activity android:name=".SessionSyllabus5"></activity>
+        <activity android:name=".SessionSyllabus6"></activity>
+        <activity android:name=".SessionSyllabus7"></activity>
+        <activity android:name=".SessionSyllabus8"></activity>
+
+
+
+
+
+        <activity android:name=".CseSem1OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem1NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem2OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem2NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem3NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem3OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem4NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem4OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem5OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem5NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem6OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem6NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem7OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem7NewSyllabusSubjects"></activity>
+        <activity android:name=".CseSem8OldSyllabusSubjects"></activity>
+        <activity android:name=".CseSem8NewSyllabusSubjects"></activity>
+
+
+
+
+        <activity android:name=".phy1Syllabus"></activity>
+        <activity android:name=".maths1Syllabus"></activity>
+        <activity android:name=".focp1Syllabus"></activity>
+        <activity android:name=".eee1Syllabus"></activity>
+        <activity android:name=".bt1Syllabus"></activity>
+        <activity android:name=".mp1Syllabus"></activity>
+
+        <activity android:name=".phy1NewSyllabus"></activity>
+        <activity android:name=".maths1NewSyllabus"></activity>
+        <activity android:name=".Tc1NewSyllabus"></activity>
+        <activity android:name=".EGD1NewSyllabus"></activity>
+        <activity android:name=".et1NewSyllabus"></activity>
+        <activity android:name=".che1NewSyllabus"></activity>
+
+        <activity android:name=".phy2OldSyllabus"></activity>
+        <activity android:name=".che2OldSyllabus"></activity>
+        <activity android:name=".maths2OldSyllabus"></activity>
+        <activity android:name=".et2OldSyllabus"></activity>
+        <activity android:name=".eng2OldSyllabus"></activity>
+        <activity android:name=".egd2OldSyllabus"></activity>
+
+        <activity android:name=".mp2NewSyllabus"></activity>
+        <activity android:name=".bt2NewSyllabus"></activity>
+        <activity android:name=".ee2NewSyllabus"></activity>
+        <activity android:name=".cp2NewSyllabus"></activity>
+        <activity android:name=".ap2NewSyllabus"></activity>
+        <activity android:name=".am2NewSyllabus"></activity>
+
+
+        <activity android:name=".dbms3OldSyllabus"></activity>
+        <activity android:name=".ds3OldSyllabus"></activity>
+        <activity android:name=".dss3OldSyllabus"></activity>
+        <activity android:name=".if3OldSyllabus"></activity>
+        <activity android:name=".ac3OldSyllabus"></activity>
+        <activity android:name=".bem3OldSyllabus"></activity>
+
+
+        <activity android:name=".fom3NewSyllabus"></activity>
+        <activity android:name=".dss3NewSyllabus"></activity>
+        <activity android:name=".ds3NewSyllabus"></activity>
+        <activity android:name=".dbms3NewSyllabus"></activity>
+        <activity android:name=".de3NewSyllabus"></activity>
+        <activity android:name=".pl3NewSyllabus"></activity>
+        <activity android:name=".es3NewSyllabus"></activity>
+
+
+
+        <activity android:name=".mpi4OldSyllabus"></activity>
+        <activity android:name=".de4OldSyllabus"></activity>
+        <activity android:name=".pl4OldSyllabus"></activity>
+        <activity android:name=".oops4OldSyllabus"></activity>
+        <activity android:name=".coa4OldSyllabus"></activity>
+        <activity android:name=".maths4OldSyllabus"></activity>
+
+
+
+
+        <activity android:name=".ddc4NewSyllabus"></activity>
+        <activity android:name=".mpi4NewSyllabus"></activity>
+        <activity android:name=".os4NewSyllabus"></activity>
+        <activity android:name=".oops4NewSyllabus"></activity>
+        <activity android:name=".maths4NewSyllabus"></activity>
+        <activity android:name=".if4NewSyllabus"></activity>
+
+
+        <activity android:name=".at5OldSyllabus"></activity>
+        <activity android:name=".cn5OldSyllabus"></activity>
+        <activity android:name=".fom5OldSyllabus"></activity>
+        <activity android:name=".os5OldSyllabus"></activity>
+        <activity android:name=".daa5OldSyllabus"></activity>
+
+
+        <activity android:name=".at5NewSyllabus"></activity>
+        <activity android:name=".cn5NewSyllabus"></activity>
+        <activity android:name=".coa5NewSyllabus"></activity>
+        <activity android:name=".daa5NewSyllabus"></activity>
+        <activity android:name=".sm5NewSyllabus"></activity>
+
+
+        <activity android:name=".mc6OldSyllabus"></activity>
+        <activity android:name=".cht6OldSyllabus"></activity>
+        <activity android:name=".nms6OldSyllabus"></activity>
+        <activity android:name=".se6OldSyllabus"></activity>
+        <activity android:name=".mt6OldSyllabus"></activity>
+        <activity android:name=".gt6OldSyllabus"></activity>
+        <activity android:name=".lp6OldSyllabus"></activity>
+
+
+        <activity android:name=".cd6NewSyllabus"></activity>
+        <activity android:name=".it6NewSyllabus"></activity>
+        <activity android:name=".mc6NewSyllabus"></activity>
+        <activity android:name=".wt6NewSyllabus"></activity>
+        <activity android:name=".se6NewSyllabus"></activity>
+        <activity android:name=".bie6NewSyllabus"></activity>
+
+             <activity android:name=".cd7OldSyllabus"></activity>
+        <activity android:name=".we7OldSyllabus"></activity>
+        <activity android:name=".smcs7OldSyllabus"></activity>
+        <activity android:name=".spm7OldSyllabus"></activity>
+        <activity android:name=".esd7OldSyllabus"></activity>
+        <activity android:name=".ai7OldSyllabus"></activity>
+        <activity android:name=".ip7OldSyllabus"></activity>
+        <activity android:name=".ulp7OldSyllabus"></activity>
+        <activity android:name=".sc7OldSyllabus"></activity>
+
+
+
+        <activity android:name=".nnfl8OldSyllabus"></activity>
+        <activity android:name=".icg8OldSyllabus"></activity>
+        <activity android:name=".dos8OldSyllabus"></activity>
+        <activity android:name=".sqmt8OldSyllabus"></activity>
+        <activity android:name=".bio8OldSyllabus"></activity>
+        <activity android:name=".es8OldSyllabus"></activity>
+        <activity android:name=".rtss8OldSyllabus"></activity>
+        <activity android:name=".sv8OldSyllabus"></activity>
+        <activity android:name=".sm8OldSyllabus"></activity>
+        <activity android:name=".oose8OldSyllabus"></activity>
+        <activity android:name=".dw8OldSyllabus"></activity>
+
+
+
+        <activity android:name=".MESessionSyllabus1"></activity>
+        <activity android:name=".MESessionSyllabus2"></activity>
+        <activity android:name=".MESessionSyllabus3"></activity>
+        <activity android:name=".MESessionSyllabus4"></activity>
+        <activity android:name=".MESessionSyllabus5"></activity>
+
+
+        <activity android:name=".MeSem3NewSyllabusSubjects"></activity>
+        <activity android:name=".MeSem3OldSyllabusSubjects"></activity>
+        <activity android:name=".MeSem4NewSyllabusSubjects"></activity>
+        <activity android:name=".MeSem4OldSyllabusSubjects"></activity>
+        <activity android:name=".MeSem5NewSyllabusSubjects"></activity>
+        <activity android:name=".MeSem5OldSyllabusSubjects"></activity>
+
+        <activity android:name=".pt1Me3OldSyllabus"></activity>
+        <activity android:name=".thermoMe3OldSyllabus"></activity>
+        <activity android:name=".mathsMe3OldSyllabus"></activity>
+        <activity android:name=".smMe3OldSyllabus"></activity>
+        <activity android:name=".mdMe3OldSyllabus"></activity>
+        <activity android:name=".kmMe3OldSyllabus"></activity>
+
+        <activity android:name=".mathsMe3NewSyllabus"></activity>
+        <activity android:name=".thermoMe3NewSyllabus"></activity>
+        <activity android:name=".mosMe3NewSyllabus"></activity>
+        <activity android:name=".mdMe3NewSyllabus"></activity>
+        <activity android:name=".kmMe3NewSyllabus"></activity>
+        <activity android:name=".msMe3NewSyllabus"></activity>
+        <activity android:name=".esMe3NewSyllabus"></activity>
+
+
+        <activity android:name=".pt2Me4OldSyllabus"></activity>
+        <activity android:name=".msMe4OldSyllabus"></activity>
+        <activity android:name=".smMe4OldSyllabus"></activity>
+        <activity android:name=".fmMe4OldSyllabus"></activity>
+        <activity android:name=".dmMe4OldSyllabus"></activity>
+        <activity android:name=".bemMe4OldSyllabus"></activity>
+
+
+        <activity android:name=".fomMe4NewSyllabus"></activity>
+        <activity android:name=".pt1Me4NewSyllabus"></activity>
+        <activity android:name=".sgpMe4NewSyllabus"></activity>
+        <activity android:name=".mosMe4NewSyllabus"></activity>
+        <activity android:name=".fmMe4NewSyllabus"></activity>
+        <activity android:name=".dmMe4NewSyllabus"></activity>
+        <activity android:name=".esMe4NewSyllabus"></activity>
+
+        <activity android:name=".icMe5OldSyllabus"></activity>
+        <activity android:name=".fmMe5OldSyllabus"></activity>
+        <activity android:name=".htMe5OldSyllabus"></activity>
+        <activity android:name=".ieMe5OldSyllabus"></activity>
+        <activity android:name=".mdMe5OldSyllabus"></activity>
+        <activity android:name=".sgMe5OldSyllabus"></activity>
+
+
+        <activity android:name=".Aboutus_ViewMore"></activity>
+        <activity android:name=".Placements_ViewMore"></activity>
+        <activity android:name=".Contact_ViewMore"></activity>
+        <activity android:name=".Facilities_ViewMore"></activity>
+
+        <activity android:name=".Download_ViewMore"></activity>
+        <activity android:name=".Quality_ViewMore"></activity>
+        <activity android:name=".Chairman_ViewMore"></activity>
+        <activity android:name=".Principal_ViewMore"></activity>
+              <activity android:name=".Courses_ViewMore"></activity>
+        <activity android:name=".Fees_ViewMore"></activity>
+
+
+        <activity android:name=".woman_ViewMore"></activity>
+        <activity android:name=".Transport_ViewMore"></activity>
+        <activity android:name=".Hostel_ViewMore"></activity>
+        <activity android:name=".Cafeteria_ViewMore"></activity>
+        <activity android:name=".Medical_ViewMore"></activity>
+        <activity android:name=".Sports_ViewMore"></activity>
+        <activity android:name=".Lib_ViewMore"></activity>
+        <activity android:name=".Wifi_ViewMore"></activity>
+        <activity android:name=".NSS_ViewMore"></activity>
+        <activity android:name=".Gym_ViewMore"></activity>
+        <activity android:name=".Atm_ViewMore"></activity>
+        <activity android:name=".Reachus_ViewMore"></activity>
+
+
+
+        <activity android:name=".Placements1_ViewMore"></activity>
+        <activity android:name=".Placements2_ViewMore"></activity>
+
+
+        <activity android:name=".Prospectus_ViewMore"></activity>
+        <activity android:name=".AF_ViewMore"></activity>
+    </application>
+
+</manifest>
